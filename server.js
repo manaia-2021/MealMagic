@@ -1,6 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const mealRoutes = require('./routes')
+
 const { getIngredientsData, getMealData } = require('./utils')
 
 const server = express()
@@ -13,11 +14,14 @@ server.use(express.urlencoded({ extended: false }))
 server.engine('hbs', hbs({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
-server.use('/meal', mealRoutes)
+server.use('/findMeAMeal', mealRoutes)
 
 module.exports = server
 
+// GET /
+// to display ingredients
 server.get('/', (req, res) => {
+
   getIngredientsData((err, ingredientsData) => {
     if (err) {
       res.status(500).send(err.message)
