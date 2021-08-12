@@ -1,52 +1,22 @@
 body {
-  background-color: #FFCCCC;
-  font-family: 'Spirax', cursive;
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
 }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.navbar {
+  background:#6ab446;
 }
-
-.app {
-  display: flex;
-  flex-direction: column;
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
 }
-
-.puppy-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
+.nav-link {
+  margin-right: 1em !important;
 }
-
-.puppy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 50px;
+.nav-link:hover {
+  color: #000;
 }
-
-.img-circle {
-  border-radius: 50%;
-  object-fit: cover;
-  width: 230px;
-  height: 230px;
-}
-
-.title {
-  text-align: center;
-}
-
-.nav {
-  text-align: center;
-  color: black;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Roboto', sans-serif;
+.navbar-collapse {
+  justify-content: flex-end;
 }
