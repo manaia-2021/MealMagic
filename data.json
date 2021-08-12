@@ -5,69 +5,69 @@
       "meal": "Spaghetti Bolognese",
       "video": "https://www.youtube.com/watch?v=-gF8d-fitkU&ab_channel=JamieOliver",
       "image": "https://i.ytimg.com/vi/B0rbdhsO4NI/maxresdefault.jpg",
-      "ingredients": "Spaghetti, Ground Beef, Tomato, Cheese"
+      "ingredients": ["Spaghetti, Ground Beef, Tomato, Cheese"]
     },
     { "id": 2,
       "meal": "Spaghetti & Meatballs",
       "video": "https://www.youtube.com/watch?v=Wd0AYwxW2zg",
       "image": "https://www.onceuponachef.com/images/2019/09/Easy-Spaghetti-and-Meatball-Recipe-760x1057.jpg",
-      "ingredients": "Spaghetti, Ground Beef, Tomato, Cheese"
+      "ingredients": ["Spaghetti, Ground Beef, Tomato, Cheese"]
     },
     {
       "id": 3,
       "meal": "The Perfect Burger",
       "video": "https://www.youtube.com/watch?v=iM_KMYulI_s",
       "image": "https://www.gordonramsayrestaurants.com/assets/Uploads/_resampled/CroppedFocusedImage108081050-50-bsk-burger-recipe.jpg",
-      "ingredients": "Ground Beef, Bread, Tomato, Cheese, Onion"
+      "ingredients": ["Ground Beef, Bread, Tomato, Cheese, Onion"]
     },
     {
       "id": 4,
       "meal": "Butter Chicken",
       "video": "https://www.youtube.com/watch?v=JKs-cRneTyE&t=3s&ab_channel=JamieOliver",
       "image": "https://cafedelites.com/wp-content/uploads/2019/01/Butter-Chicken-IMAGE-64.jpg",
-      "ingredients": "Chicken, Butter, Rice, Onion, Yoghurt"
+      "ingredients": ["Chicken, Butter, Rice, Onion, Yoghurt"]
     },
     {
       "id": 5,
       "meal": "Grilled Chicken Ceasar Salad",
       "video": "https://www.youtube.com/watch?v=okZZ6DE2QHQ&ab_channel=JamieOliver",
       "image": "https://www.fromvalerieskitchen.com/wordpress/wp-content/uploads/2020/08/Grilled-Chicken-Caesar-Salad-16.jpg",
-      "ingredients": "Salad mix, Chicken, Bread, Cheese, Lettuce"
+      "ingredients": ["Salad mix, Chicken, Bread, Cheese, Lettuce"]
     },
     {
       "id": 6,
       "meal": "Chicken Fried Rice",
       "video": "https://www.youtube.com/watch?v=Zk2aJoFZIaY&ab_channel=NatashasKitchen",
       "image": "https://www.cookingclassy.com/wp-content/uploads/2014/04/chicken-fried-rice-edit3+srgb..jpg",
-      "ingredients": "Chicken, Rice, Carrots, Butter, Salad mix, Peas, Eggs"
+      "ingredients": ["Chicken, Rice, Carrots, Butter, Salad mix, Peas, Eggs"]
     },
     {
       "id": 7,
       "meal": "Chicken Ramen Noodle Soup",
       "video": "https://www.youtube.com/watch?v=xqFo59YveXo",
       "image": "https://images-gmi-pmc.edge-generalmills.com/9c86b2d3-8780-4bcb-8789-2357f94e764f.jpg",
-      "ingredients": "Noodles, Chicken, Salad mix, Potato, Tomato, Eggs"
+      "ingredients": ["Noodles, Chicken, Salad mix, Potato, Tomato, Eggs"]
     },
     {
       "id": 8,
       "meal": "Vegan Bulgogi Udon Noodles",
       "video": "https://www.youtube.com/watch?v=i6VKqXZ8EvE",
       "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2020/02/vegan-yaki-udon-close-1024x1536.jpg",
-      "ingredients": "Salad mix, Noodles, Bok Choy, Tofu, Carrots, Mushrooms"
+      "ingredients": ["Salad mix, Noodles, Bok Choy, Tofu, Carrots, Mushrooms"]
     },
     {
       "id": 9,
       "meal": "Tofu Bibimbap",
       "video": "https://www.youtube.com/watch?v=hcEGaV6YJ6I&ab_channel=BreaktheSpice",
       "image": "https://www.halfbakedharvest.com/wp-content/uploads/2018/01/Superfood-Bibimbap-with-Crispy-Tofu-6-700x1050.jpg",
-      "ingredients": "Tofu, Salad Mix, Mushrooms, Cucumber, Broccoli, Avocado"
+      "ingredients": ["Tofu, Salad Mix, Mushrooms, Cucumber, Broccoli, Avocado"]
     },
     { 
       "id": 10,
       "meal": "Vegan Mushroom Avo Toast",
       "video": "https://www.youtube.com/watch?v=z51wwESXxG4&ab_channel=MarlonDoll",
       "image": "https://biancazapatka.com/wp-content/uploads/2019/06/avocado-mushroom-toast-recipe-vegan-easy-snack-guacamole-pilze-720x1008.jpg",
-      "ingredients": "Avocado, Mushrooms, Bread, Garlic"
+      "ingredients": ["Avocado, Mushrooms, Bread, Garlic"]
     }
   ]
 }
