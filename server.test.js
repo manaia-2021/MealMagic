@@ -16,3 +16,12 @@ test('GET / displays home page containing list of ingredients', (done) => {
         done()
       })
   })
+
+  test('getIngredientsData returns an object with the property of Ingredients containing an array of Ingredients', (done) => {
+    getIngredientsData((err, ingredientsData) => {
+      expect(err).toBeNull()
+      expect(ingredientsData.ingredients).not.toBeNull()
+      // expect(puppyData.puppies).toHaveLength(7)
+      done()
+    })
+  })  
