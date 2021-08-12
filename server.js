@@ -1,7 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const mealRoutes = require('./routes')
-const { getMealData } = require('./utils')
+const { getIngredients } = require('./utils')
 
 const server = express()
 
@@ -12,19 +12,20 @@ server.use(express.urlencoded({ extended: false }))
 // Handlebars configuration
 server.engine('hbs', hbs({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
-// user puppy routes
 
 server.use('/meal', mealRoutes)
 
 module.exports = server
 
+// GET /
+// to display ingredients
 server.get('/', (req, res) => {
-  getMealData((err, mealData) => {
+  getIngredients((err, ingredients) => {
     if (err) {
       res.status(500).send(err.message)
       return
     }
-    const viewData = mealData
+    const viewData = ingredients
     res.render('home', viewData)
   })
 })

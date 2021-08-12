@@ -4,29 +4,16 @@ const { getMealData } = require('./utils')
 
 module.exports = router
 
-// GET /puppies/details
-router.get('/:id', (req, res) => {
-  getMealData((err, puppyData) => {
+// GET /findMeAMeal
+router.get('/findMeAMeal/:id', (req, res) => {
+  getMealData((err, mealData) => {
     if (err) {
       res.status(500).send(err.message)
       return
     }
-    const puppyID = (req.params.id) - 1
-    const viewData = puppyData.puppies[puppyID]
-    res.render('details', viewData)
-  })
-})
-
-// GET /puppies/id/edit
-router.get('/:id/edit', (req, res) => {
-  getMealData((err, puppyData) => {
-    if (err) {
-      res.status(500).send(err.message)
-      return
-    }
-    const puppyID = Number(req.params.id)
-    const viewData = puppyData.puppies.find(({ id }) => id === puppyID)
-    res.render('edit', viewData)
+    const mealID = Number(req.params.id)
+    const viewData = mealData.Meals.find(({ id }) => id === mealID)
+    res.render('displayMeal', viewData)
   })
 })
 
