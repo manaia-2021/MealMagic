@@ -12,7 +12,6 @@ server.use(express.urlencoded({ extended: false }))
 // Handlebars configuration
 server.engine('hbs', hbs({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
-// user puppy routes
 
 server.use('/meal', mealRoutes)
 
