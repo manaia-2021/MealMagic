@@ -2,12 +2,12 @@ const fs = require('fs')
 const path = require('path')
 
 module.exports = {
-  getIngredients,
-  getMealData
+  getMealData,
+  getIngredientsData
 }
 
-function getIngredients (callback) {
-  const filename = path.join(__dirname, 'ingredients.json')
+function getMealData (callback) {
+  const filename = path.join(__dirname, 'data.json')
 
   fs.readFile(filename, 'utf8', (err, contents) => {
     if (err) {
@@ -25,8 +25,8 @@ function getIngredients (callback) {
   })
 }
 
-function getMealData (callback) {
-  const filename = path.join(__dirname, 'data.json')
+function getIngredientsData (callback) {
+  const filename = path.join(__dirname, 'ingredients.json')
 
   fs.readFile(filename, 'utf8', (err, contents) => {
     if (err) {

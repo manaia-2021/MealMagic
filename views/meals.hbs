@@ -1,0 +1,30 @@
+{{!-- <div class="container">
+  <h1>Your Meal Options</h1>
+  <div class="meal-list"></div>
+  {{#each Meals}}
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{this.meal}}</h5>
+      <a href="#" class="btn btn-primary">Video instructions</a>
+    </div>
+  </div>
+  {{/each}}
+</div>
+</div> --}}
+
+<div id="outer">
+  <h1>Your Meal Options</h1>
+  <div id="inner">
+    {{#each Meals}}
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src={{this.image}} alt="Meal image">
+      <div class="card-body">
+        <h5 class="card-title">{{this.meal}}</h5>
+        <a href="{{this.video}}" class="btn btn-primary">Video instructions</a>
+      </div>
+    </div>
+    {{/each}}
+
+  </div>
+</div>
