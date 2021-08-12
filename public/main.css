@@ -52,3 +52,9 @@ h1 {
   text-align: center;
   padding: 50px;
 }
+
+#inner {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}

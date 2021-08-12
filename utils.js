@@ -37,8 +37,6 @@ function getIngredientsData (callback) {
     try {
       const parsedData = JSON.parse(contents)
       callback(null, parsedData)
-      console.log(parsedData)
-      console.log(parsedData)
     } catch (parseError) {
       console.error(parseError)
       callback(new Error('Unable to parse the data file'))

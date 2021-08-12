@@ -1,7 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const mealRoutes = require('./routes')
-const { getIngredientsData } = require('./utils')
+const { getIngredientsData, getMealData } = require('./utils')
 
 const server = express()
 
@@ -25,5 +25,17 @@ server.get('/', (req, res) => {
     }
     const viewData = ingredientsData
     res.render('home', viewData)
+  })
+})
+
+// GET /meals
+server.get('/meals', (req, res) => {
+  getMealData((err, mealData) => {
+    if (err) {
+      res.status(500).send(err.message)
+      return
+    }
+    const viewData = mealData
+    res.render('meals', viewData)
   })
 })
