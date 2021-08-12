@@ -1,7 +1,16 @@
-<div class="container">
-  {{#each puppies}}
-  <div class="puppy-list">
-    <a href="/puppies/{{id}}"><img class="img-circle" src="{{image}}" alt="{{name}}"></a>
+<div class="container vertical-center">
+  <h1>What ingredients do you have?</h1>
+  <div class="ingredients-list">
+    {{#each ingredients}}
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        <p>{{this}}</p>
+      </label>
+    </div>
+    {{/each}}
   </div>
-  {{/each}}
+  <div class="button-wrapper">
+    <button type="button" class="btn btn-success">Find me a meal!</button>
+  </div>
 </div>

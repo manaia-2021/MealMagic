@@ -20,3 +20,35 @@ body {
 .navbar-collapse {
   justify-content: flex-end;
 }
+
+.navbar-header {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+.navbar-brand {
+  float:none;
+}
+
+.vertical-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  }
+
+.ingredients-list {
+  columns: 100px 3;
+}
+
+h1 {
+  text-align: center;
+  padding: 50px;
+}
+
+.button-wrapper {
+  text-align: center;
+  padding: 50px;
+}
