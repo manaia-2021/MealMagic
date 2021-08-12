@@ -13,7 +13,7 @@ server.use(express.urlencoded({ extended: false }))
 server.engine('hbs', hbs({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
-server.use('/meal', mealRoutes)
+server.use('/findMeAMeal', mealRoutes)
 
 module.exports = server
 

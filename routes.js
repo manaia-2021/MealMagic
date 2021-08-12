@@ -4,8 +4,18 @@ const { getMealData } = require('./utils')
 
 module.exports = router
 
-// GET /findMeAMeal
-router.get('/findMeAMeal/:id', (req, res) => {
+// POST route /findMeAMeal
+// This page should display all possible meal selections
+// based on the list of ingredients received from the user
+router.post('/', (req, res) => {
+  // We must get ingredients list from user
+  // We need to have some logic to find what meals can be displayed
+  // We render a page with all possible selections
+})
+
+// GET /findMeAMeal/id
+// This page displays the final meal selection
+router.get('/id', (req, res) => {
   getMealData((err, mealData) => {
     if (err) {
       res.status(500).send(err.message)
@@ -16,22 +26,3 @@ router.get('/findMeAMeal/:id', (req, res) => {
     res.render('displayMeal', viewData)
   })
 })
-
-// // POST route
-// router.post('/:id/edit', (req, res) => {
-//   const updatedPuppy = {
-//     id: req.params.id,
-//     name: req.body.name,
-//     breed: req.body.breed,
-//     owner: req.body.owner
-//   }
-//   console.log(updatedPuppy)
-//   getPuppyData((err, puppyData) => {
-//     if (err) {
-//       res.status(500).send(err.message)
-//       return
-//     }
-//     const puppyID = Number(req.params.id)
-//     const viewData = puppyData.puppies.find(({ id }) => id === puppyID)
-
-// })
