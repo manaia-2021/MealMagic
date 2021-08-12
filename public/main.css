@@ -53,8 +53,19 @@ h1 {
   padding: 50px;
 }
 
-#inner {
+#meal-list {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+.card-img-top {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
