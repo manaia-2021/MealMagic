@@ -1,16 +1,18 @@
 <div class="container vertical-center">
   <h1>What ingredients do you have?</h1>
-  <div class="ingredients-list">
-    {{#each ingredients}}
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        <p>{{this}}</p>
-      </label>
+  <form>
+    <div class="ingredients-list">
+      {{#each ingredients}}
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="{{this}}">
+        <label class="form-check-label" for="flexCheckDefault">
+          <p>{{this}}</p>
+        </label>
+      </div>
+      {{/each}}
     </div>
-    {{/each}}
-  </div>
-  <div class="button-wrapper">
-    <a href="/meals" class="btn btn-success">Find me a meal!</a>
-  </div>
+    <div class="button-wrapper">
+      <a href="/meals" class="btn btn-success">Find me a meal!</a>
+    </div>
+  </form>
 </div>
