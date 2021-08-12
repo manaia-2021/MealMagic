@@ -1,7 +1,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const mealRoutes = require('./routes')
-const { getMealData, getIngredientsData } = require('./utils')
+const { getIngredientsData } = require('./utils')
 
 const server = express()
 
@@ -26,8 +26,4 @@ server.get('/', (req, res) => {
     const viewData = ingredientsData
     res.render('home', viewData)
   })
-})
-
-server.get('/', (req, res) => {
-  res.render('home')
 })
