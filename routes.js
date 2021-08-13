@@ -1,14 +1,33 @@
 const express = require('express')
 const router = express()
 const { getMealData } = require('./utils')
+const { getIngredientsData } = require('./utils')
 
 module.exports = router
 
 // POST route /findMeAMeal
 // This page should display all possible meal selections
 // based on the list of ingredients received from the user
-router.post('/', (req, res) => {
+router.post('/findMeAMeal', (req, res) => {
+  const ingredients = []
+  getIngredientsData((err, ingredientsData) => {
+    if (err) {
+      res.status(500).send(err.message)
+      return
+    }
+    ingredients = ingredientsData.ingredients // Array of ingredients
+  })
+  const userIngredients = []
   // We must get ingredients list from user
+  for (let i = 1; i < ingredients.length; i++) {
+    const name = ingredients[i]
+    if (req.body[name]) {
+      userIngredients.push(ingredients[i])
+    }
+  }
+
+  res.send(userIngredients.toString)
+
   // We need to have some logic to find what meals can be displayed
   // We render a page with all possible selections
 })

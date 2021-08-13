@@ -21,7 +21,6 @@ module.exports = server
 // GET /
 // to display ingredients
 server.get('/', (req, res) => {
-
   getIngredientsData((err, ingredientsData) => {
     if (err) {
       res.status(500).send(err.message)
@@ -29,17 +28,5 @@ server.get('/', (req, res) => {
     }
     const viewData = ingredientsData
     res.render('home', viewData)
-  })
-})
-
-// GET /meals
-server.get('/meals', (req, res) => {
-  getMealData((err, mealData) => {
-    if (err) {
-      res.status(500).send(err.message)
-      return
-    }
-    const viewData = mealData
-    res.render('meals', viewData)
   })
 })
