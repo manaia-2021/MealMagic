@@ -43,3 +43,14 @@ function getIngredientsData (callback) {
     }
   })
 }
+
+// const dummyData = ["Potato", "Eggs", "Peas", "Carrots", "Lettuce", "Onion", "Rice", "Butter", "Chicken", "Beef mince", "Garlic", "Pasta", "Salt", "Milk", "Cheese"]
+
+// function matchMealsToIngredients (callback) {
+
+//   getMealData((err, mealData) => {
+//     if (err) {
+//       res.status(500).send(err.message)
+//       return
+//     }
+// }
