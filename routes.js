@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
     console.log(userIngredients)
   })
 
-  res.send('Ingredients')
+  res.render('meals')
 
   // We need to have some logic to find what meals can be displayed
   // We render a page with all possible selections
