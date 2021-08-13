@@ -2,7 +2,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 const mealRoutes = require('./routes')
 
-const { getIngredientsData, getMealData } = require('./utils')
+const { getIngredientsData } = require('./utils')
 
 const server = express()
 
