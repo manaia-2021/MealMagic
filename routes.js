@@ -16,14 +16,10 @@ router.post('/', (req, res) => {
       return
     }
     const ingredients = ingredientsData.ingredients // Array of ingredients
-    console.log(ingredients)
 
-    // We must get ingredients list from user
     for (let i = 0; i < ingredients.length; i++) {
       const name = ingredients[i]
-      console.log(req.body.name)
-      console.log(req.body[name])
-      if (req.body[name]) {
+      if (req.body[name] === 'on') {
         userIngredients.push(ingredients[i])
       }
     }
